@@ -69,17 +69,17 @@
 % \includeonly{chapters/intro,chapters/background}
 
 \begin{document}
-\include{chapters/frontmatter}
+\include{chapters-final-report/frontmatter}
 
 \pagestyle{empty}\cleardoublepage
 \normalspacing \setcounter{page}{1} \pagenumbering{arabic} \pagestyle{cpecmu}
 
-\include{chapters/intro}
-\include{chapters/background}
-\include{chapters/approach}
-\include{chapters/eval}
+\include{chapters-final-report/intro}
+\include{chapters-final-report/background}
+\include{chapters-final-report/approach}
+\include{chapters-final-report/eval}
 \ifproject
-\include{chapters/conclusion}
+\include{chapters-final-report/conclusion}
 \fi
 
 \bibliography{sampleReport}
@@ -87,7 +87,7 @@
 \ifproject
 \normalspacing
 \appendix
-\include{chapters/appendix}
+\include{chapters-final-report/appendix}
 
 %% Display glossary (optional) -- need glossary option.
 \ifglossary\glossarypage\fi
