@@ -125,6 +125,19 @@
   \label{fig:create-event-join}
 \end{figure}
 
+\FloatBarrier
+\section{โครงสร้างการไหลของข้อมูล}
+โครงสร้างการไหลของข้อมูลแบ่งออกเป็น 3 ส่วน ได้แก่ User, System และ Admin
+โดยข้อมูลที่userจะส่งไปให้ system ได้แก่ ข้อมูลของผู้ใช้,ข้อมูลการกดสนใจเข้าร่วมกิจกรรม,คำขอเข้าร่วมกิจกรรม,คำขอสร้างกิจกรรม
+จากนั้น system จะส่งข้อมูลคำขอสร้างกิจกรรมไปให้ admin ในการอนุมัติ แล้วจึงจะส่งผลการอณุมัติไปพร้อมกับข้อมูลที่จะแสดงผลไปให้ user
+ซึ่ง userที่เป็นผู้สร้างกิจกรรมที่ได้รับคำขอเข้าร่วมกิจกรรม จะสามารถส่งผลการขอเข้าร่วมไปให้systemให้ส่งไปให้userที่ขออีกทีนึง ตามดังในรูปภาพที่3.7
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.9\linewidth]{image/dataflow-diagram.png}
+\end{center}
+\caption[Poem]{แผนผังการไหลของข้อมูล}
+\label{fig:dataflow}
+\end{figure}
 % \subsection{The Black Kitten}
 %   One thing was certain, that the WHITE kitten had had nothing to
 % do with it:---it was the black kitten's fault entirely~\cite{aiw}.  For the
