@@ -53,6 +53,91 @@
 \end{itemize}
 \section{นโยบายความเป็นส่วนตัว}
 เมื่อผู้ใช้ลงชื่อเข้าใช้งานครั้งแรก ผู้ใช้จะต้องตั้งค่า username เพื่อใช้เป็นนามแฝงในการแสดงความคิดเห็นในหน้ากิจกรรม
+
+\section{การออกแบบหน้าเว็บแอปพลิเคชัน}
+ในการออกแบบหน้าเว็บแอปพลิชัน พวกเราได้เลือกใช้ Figma เพราะเป็นเครื่องมือที่อำนวยความสะดวก ในการออกแบบหน้าเว็บแอปพลิเคชัน ช่วยให้การออกแบบ UI/UX สะดวกมากขึ้น อีกทั้งยังเป็นเครื่องมือที่ผู้คนต่างก็นิยมใช้
+ทำให้ Community ที่ผู้ใช้สามารถแชร์วิธีการออกแบบ ทำให้สามารถนำไปเป็นไอเดียในการออกแบบได้ 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{image/Figma-design/Main-not-login.png}
+\end{center}
+\caption[Poem]{หน้าแรก}
+\label{fig:main}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Event-info.png}
+    \caption{แสดงรายการประกิจกรรม}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Event-info-1.png}
+    \caption{แสดงรายละเอียดของประกาศกิจกรรม}
+  \end{subfigure}
+  \caption{หน้าข่าวสารกิจกรรม}
+  \label{fig:event-info}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Event-join.png}
+    \caption{แสดงรายการกิจกรรมที่เปิดรับสมัคร}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Event-join-1.png}
+    \caption{แสดงรายละเอียดของกิจกรรมที่เปิดรับสมัคร}
+  \end{subfigure}
+  \caption{หน้าเข้าร่วมกิจกรรม}
+  \label{fig:event-join}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Create-event-info.png}
+    \caption{กรอกข้อมูลของกิจกรรม}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Create-event-info-1.png}
+    \caption{แสดงข้อความสร้างสำเร็จ}
+  \end{subfigure}
+  \caption{หน้าสร้างประกาศกิจกรรม}
+  \label{fig:create-event-info}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Create-event-join.png}
+    \caption{กรอกข้อมูลของกิจกรรม}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Create-event-join-1.png}
+    \caption{แสดงข้อความสร้างสำเร็จ}
+  \end{subfigure}
+  \caption{หน้าสร้างกิจกรรมแบบรับสมัคร}
+  \label{fig:create-event-join}
+\end{figure}
+
+\FloatBarrier
+\section{โครงสร้างการไหลของข้อมูล}
+โครงสร้างการไหลของข้อมูลแบ่งออกเป็น 3 ส่วน ได้แก่ User, System และ Admin
+โดยข้อมูลที่userจะส่งไปให้ system ได้แก่ ข้อมูลของผู้ใช้,ข้อมูลการกดสนใจเข้าร่วมกิจกรรม,คำขอเข้าร่วมกิจกรรม,คำขอสร้างกิจกรรม
+จากนั้น system จะส่งข้อมูลคำขอสร้างกิจกรรมไปให้ admin ในการอนุมัติ แล้วจึงจะส่งผลการอณุมัติไปพร้อมกับข้อมูลที่จะแสดงผลไปให้ user
+ซึ่ง userที่เป็นผู้สร้างกิจกรรมที่ได้รับคำขอเข้าร่วมกิจกรรม จะสามารถส่งผลการขอเข้าร่วมไปให้systemให้ส่งไปให้userที่ขออีกทีนึง ตามดังในรูปภาพที่3.7
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.9\linewidth]{image/dataflow-diagram.png}
+\end{center}
+\caption[Poem]{แผนผังการไหลของข้อมูล}
+\label{fig:dataflow}
+\end{figure}
 % \subsection{The Black Kitten}
 %   One thing was certain, that the WHITE kitten had had nothing to
 % do with it:---it was the black kitten's fault entirely~\cite{aiw}.  For the
