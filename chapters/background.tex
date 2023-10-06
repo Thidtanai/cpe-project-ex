@@ -6,34 +6,72 @@
 
 \section{ด้าน Frontend}
 \subsection{JavaScript}
-๋JavaScript เป็นภาษาโปรแกรมที่ได้รับความนิยมในการใช้พัฒนาเว็บแอปพลิเคชัน โดยความนิยมนี้มาจากหลายสาเหตุ เช่น
-การเปลี่ยนแปลงส่วนต่างๆของเว็บโดยที่ไม่ต้องโหลดหน้าใหม่, สามารถใช้งานได้ทั้งฝั่งเว็บบราวเซอร์และเซิร์ฟเวอร์ และมีการแบ่งปันความรู้เกี่ยวกับภาษานี้บนอินเทอร์เน็ตอย่างกว้างขวาง
+๋JavaScript เป็นภาษาโปรแกรมที่ได้รับความนิยมในการใช้พัฒนาเว็บแอปพลิเคชัน โดยภาษานี้มีจุดเด่นคือ
+การเปลี่ยนแปลงส่วนต่างๆของเว็บโดยที่ไม่ต้องโหลดหน้าใหม่, สามารถใช้งานได้ทั้งฝั่งเว็บบราวเซอร์และเซิร์ฟเวอร์ และมีการแบ่งปันความรู้เกี่ยวกับภาษานี้บนอินเทอร์เน็ตอย่างกว้างขวาง \cite{javascript}
+% \begin{figure}[h] %h = here. other are top,bottom,separate page(p)
+%     \begin{center}
+%     \includegraphics[width=0.5\linewidth]{image/javascript_logo.jpg}
+%     \end{center}
+%     \caption[Poem]{JavaScript logo}
+%     \label{fig:javascript_logo}
+%     \end{figure}
 \subsection{React}
 React เป็นไลบรารี JavaScript ที่ใช้ในการพัฒนาเว็บแอปพลิเคชันในฝั่งที่ติดต่อผู้ใช้ (User Interface) โดย Library นี้มีจุดเด่นคือ มีระบบ State ที่ใช้ในการควบคุมสถานะของเว็บได้โดยง่าย
-อีกทั้งยังสามารถสร้าง UI components ย่อยๆเพื่อนำมาใช้ซ้ำในหน้าอื่นๆได้ 
+อีกทั้งยังสามารถสร้าง UI components ย่อยๆเพื่อนำมาใช้ซ้ำในหน้าอื่นๆได้ %\cite{react}
+% \begin{figure}[h] %h = here. other are top,bottom,separate page(p)
+%     \begin{center}
+%     \includegraphics[width=0.5\linewidth]{image/react_logo.png}
+%     \end{center}
+%     \caption[Poem]{React logo}
+%     \label{fig:react_logo}
+%     \end{figure}
 \subsection{TypeScript}
 Typescript เป็นภาษาโปรแกรมที่ถูกพัฒนาต่อจาก JavaScript โดยเพิ่ม Static typing เพื่อช่วยให้นักพัฒนาสามารถระบุชนิดข้อมูลของตัวแปรและแก้ไขข้อผิดพลาดเกี่ยวกับชนิดของตัวแปรได้ง่าย ซึ่งส่งผลให้การพัฒนา
 แอปพลิเคชันขนาดใหญ่และการดูแลหลังการพัฒนาสะดวกมากยิ่งขึ้น
+% \begin{figure}[h] %h = here. other are top,bottom,separate page(p)
+%     \begin{center}
+%     \includegraphics[width=0.3\linewidth]{image/typescript_logo.png}
+%     \end{center}
+%     \caption[Poem]{TypeScript logo}
+%     \label{fig:typescript_logo}
+%     \end{figure}
 
 \section{ด้าน Backend}
-\subsection{SQL Database}
-SQL Database คือโครงสร้างที่ใช้สำหรับการจัดเก็บและจัดการข้อมูลด้วย Structured Query Language (SQL) โดยฐานข้อมูลนี้ประกอบด้วยตาราง(tables) ซึ่งเป็นโครงสร้างข้อมูลที่ถูกกำหนดไว้ล่วงหน้า
-แต่ละตารางจะมีคอลัมน์(columns)และแถว(rows)ที่ใช้ในการเก็บข้อมูล ซึ่งคุณสมบัติสำคัญของฐานข้อมูลนี้คือ เราสามารถสร้างความสัมพันธ์ของข้อมูล โดยการเชื่อมโยงข้อมูลจากตารางหนึ่งไปอีกตารางหนึ่งได้
+\subsection{NoSQL Database}
+NoSQL Database คือ ระบบฐานข้อมูลที่ไม่ใช่ Relational Database โดยฐานข้อมูลรูปแบบนี้มีลักษณะที่ไม่จำเป็นต้องปฏิบัติตามโครงสร้างข้อมูลที่แน่นอน โดยมักนำมาใช้ในงานที่ต้องเก็บข้อมูลขนาดใหญ่
 \subsection{Firebase}
 Firebase คือแพลตฟอร์มพัฒนาแอปพลิเคชันของ Google ที่ช่วยให้นักพัฒนาสามารถสร้างแอปพลิเคชันขนาดใหญ่ได้ง่ายและรวดเร็วโดยไม่ต้องกังวลเรื่องพื้นฐานการเขียนโปรแกรม
 โดย Firebase มี Services ที่น่าสนใจอยู่หลายอย่าง เช่น ระบบยืนยันตัวตน, การจัดเก็บข้อมูลของแอปพลิเคชันบนคลาวน์, การวิเคราะห์ประสิทธิภาพของเว็บแอปพลิเคชัน, การโฮสต์เว็บแอปพลิเคชันบนคลาวน์ เป็นต้น
 \subsection{CMU-OAuth}
 CMU-OAuth เป็นระบบยืนยันตัวตนนักศึกษาและบุคลากรของมหาวิทยาลัยเชียงใหม่ โดยระบบนี้เป็นส่วนที่ถูกพัฒนามาจาก OAuth (Open Authorization) ซึ่งเป็นโปรโตคอลระบุตัวตนและเป็นตัวกลางที่แอปพลิเคชันใช้ในการเข้าถึงข้อมูลของผู้ใช้ มีจุดเด่นคือ ช่วยให้ผู้ใช้ลงชื่อเข้าใช้หลายบริการ
 ได้ด้วยข้อมูลบัญชีเดียว และผู้ใช้ยังสามารถจำกัดสิทธิการเข้าถึงข้อมูลของแต่ละบริการได้เท่าที่จำเป็น
-\section{ระบบ Text PreProcessing}
-คือ กระบวนการปรับแต่งข้อมูลก่อนที่จะนำข้อมูลนั้นไปวิเคราะห์หรือประมวลผลต่อ สามารถทำได้หลายวิธี เช่น การตัดคำสำคัญแยกออกจากประโยค, ลบตัวอักษรที่ไม่จำเป็น, การหาคำสำคัญ(Keyword) เป็นต้น เพื่อให้สะดวกต่อการนำข้อมูลไปใช้ในการพัฒนาระบบ recommendation
+% \begin{figure}[h] %h = here. other are top,bottom,separate page(p)
+%     \begin{center}
+%     \includegraphics[width=0.7\linewidth]{image/CMUOAuth_logo.png}
+%     \end{center}
+%     \caption[Poem]{CMU OAuth}
+%     \label{fig:cmu_oauth_logo}
+%     \end{figure}
+\section{การวิเคราะห์ระบบ}
+\subsection{Python}
+Python คือ ภาษาโปรแกรมที่มีความยืดหยุ่นและเข้าใจง่าย มักถูกนำมาใช้ในงานที่เกี่ยวกับการวิเคราะห์ข้อมูล, AI และ Machine Learning 
+% \begin{figure}[h] %h = here. other are top,bottom,separate page(p)
+%     \begin{center}
+%     \includegraphics[width=0.3\linewidth]{image/python_logo.png}
+%     \end{center}
+%     \caption[Poem]{Python logo}
+%     \label{fig:python_logo}
+%     \end{figure}
+\subsection{ระบบ Text PreProcessing}
+Text PreProcessing คือ กระบวนการปรับแต่งข้อมูลก่อนที่จะนำข้อมูลนั้นไปวิเคราะห์หรือประมวลผลต่อ สามารถทำได้หลายวิธี เช่น การตัดคำสำคัญแยกออกจากประโยค, ลบตัวอักษรที่ไม่จำเป็น, การหาคำสำคัญ(Keyword) เป็นต้น เพื่อให้สะดวกต่อการนำข้อมูลไปใช้ในการพัฒนาระบบ recommendation
 
-\section{ระบบ Recommendation}
+\subsection{ระบบ Recommendation}
 ระบบ Recommendation เป็นระบบคอมพิวเตอร์ที่ออกแบบมาเพื่อแนะนำสิ่งต่างๆให้กับผู้ใช้ โดยใช้วิธีการต่างๆเพื่อแนะนำสิ่งที่เป็นประโยชน์สูงสุด ระบบนี้มักใช้ในแอปพลิเคชันและเว็บไซต์ต่างๆเพื่อแนะนำสินค้า,บริการ,ข่าวสาร และอื่นๆให้กับผู้ใช้
-\subsection{Content Based Filtering}
-Content Based Filtering เป็นเทคนิคหนึ่งในการแนะนำเนื้อหาให้กับผู้ใช้ วิธีการเบื้องต้นคือ เมื่อผู้ใช้ลงชื่อเข้าใช้งานเว็บแอปพลิเคชันครั้งแรก ทางเว็บจะให้ผู้ใช้เลือก Tag ที่ตัวเองสนใจ แล้วแนะนำสิ่งที่มี Tag เหมือนหรือคล้ายกัน
-\subsection{Collaborative Filtering}
-Collaborative Filtering เป็นอีกเทคนิคหนึ่งในการแนะนำเนื้อหาให้กับผู้ใช้ วิธีการเบื้องต้นคือ ระบบจะแนะนำสิ่งที่น่าสนใจที่มาจากผู้ใช้อื่นที่มีข้อมูลเหมือนหรือคล้ายกัน เช่น เพศ, อายุ, เงินเดือน เป็นต้น
+\begin{enumerate}
+    \item Content Based Filtering เป็นเทคนิคหนึ่งในการแนะนำเนื้อหาให้กับผู้ใช้ วิธีการเบื้องต้นคือ เมื่อผู้ใช้ลงชื่อเข้าใช้งานเว็บแอปพลิเคชันครั้งแรก ทางเว็บจะให้ผู้ใช้เลือก Tag ที่ตัวเองสนใจ แล้วแนะนำสิ่งที่มี Tag เหมือนหรือคล้ายกัน
+    \item Collaborative Filtering เป็นอีกเทคนิคหนึ่งในการแนะนำเนื้อหาให้กับผู้ใช้ วิธีการเบื้องต้นคือ ระบบจะแนะนำสิ่งที่น่าสนใจที่มาจากผู้ใช้อื่นที่มีข้อมูลเหมือนหรือคล้ายกัน เช่น เพศ, อายุ, เงินเดือน เป็นต้น 
+\end{enumerate}
+
 
 
 % \subsection{Subsection heading goes here}
