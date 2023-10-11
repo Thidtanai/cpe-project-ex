@@ -74,9 +74,25 @@ Text PreProcessing คือ กระบวนการปรับแต่ง
 ระบบ Recommendation เป็นระบบคอมพิวเตอร์ที่ออกแบบมาเพื่อแนะนำสิ่งต่างๆให้กับผู้ใช้ โดยใช้วิธีการต่างๆเพื่อแนะนำสิ่งที่เป็นประโยชน์สูงสุด ระบบนี้มักใช้ในแอปพลิเคชันและเว็บไซต์ต่างๆเพื่อแนะนำสินค้า,บริการ,ข่าวสาร และอื่นๆให้กับผู้ใช้
 \cite{recom}
 \begin{enumerate}
-    \item Content Based Filtering เป็นเทคนิคหนึ่งในการแนะนำเนื้อหาให้กับผู้ใช้ วิธีการเบื้องต้นคือ เมื่อผู้ใช้ลงชื่อเข้าใช้งานเว็บแอปพลิเคชันครั้งแรก ทางเว็บจะให้ผู้ใช้เลือก Tag ที่ตัวเองสนใจ แล้วแนะนำสิ่งที่มี Tag เหมือนหรือคล้ายกัน
+    \item Content Based Filtering เป็นเทคนิคหนึ่งในการแนะนำเนื้อหาให้กับผู้ใช้ วิธีการเบื้องต้นคือ เมื่อผู้ใช้ลงชื่อเข้าใช้งานเว็บแอปพลิเคชันครั้งแรก ทางเว็บจะให้ผู้ใช้เลือก Tag ที่ตัวเองสนใจ แล้วแนะนำสิ่งที่มี Tag เหมือนหรือคล้ายกัน 
+    \begin{figure}[h] %h = here. other are top,bottom,separate page(p)
+        \begin{center}
+        \includegraphics[width=0.6\linewidth]{image/content_base.png}
+        \end{center}
+        \caption[Poem]{ตัวอย่าง Content Based Filtering\cite{content_based}}
+        \label{fig:content_based}
+        \end{figure}
     \item Collaborative Filtering เป็นอีกเทคนิคหนึ่งในการแนะนำเนื้อหาให้กับผู้ใช้ วิธีการเบื้องต้นคือ ระบบจะแนะนำสิ่งที่น่าสนใจที่มาจากผู้ใช้อื่นที่มีข้อมูลเหมือนหรือคล้ายกัน เช่น เพศ, อายุ, เงินเดือน เป็นต้น 
+    \begin{figure}[h] %h = here. other are top,bottom,separate page(p)
+        \begin{center}
+        \includegraphics[width=0.6\linewidth]{image/collaborative.png}
+        \end{center}
+        \caption[Poem]{ตัวอย่าง Collaborative Filtering\cite{collaborative}}
+        \label{fig:collaborative_filtering}
+        \end{figure}
 \end{enumerate}
+\FloatBarrier
+
 
 
 
