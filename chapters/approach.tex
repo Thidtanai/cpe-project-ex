@@ -58,40 +58,47 @@
 ในการออกแบบหน้าเว็บแอปพลิชัน พวกเราได้เลือกใช้ Figma เพราะเป็นเครื่องมือที่อำนวยความสะดวก ในการออกแบบหน้าเว็บแอปพลิเคชัน ช่วยให้การออกแบบ UI/UX สะดวกมากขึ้น อีกทั้งยังเป็นเครื่องมือที่ผู้คนต่างก็นิยมใช้
 ทำให้ผู้ใช้ทั่วโลกสามารถแชร์วิธีการออกแบบ ทำให้สามารถนำไปเป็นไอเดียในการออกแบบได้ 
 \begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.5\linewidth]{image/Figma-design/Main-not-login.png}
-\end{center}
-\caption[Poem]{หน้าแรก}
-\label{fig:main}
+  \centering
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Main-not-login.png}
+    \caption{แสดงข้อมูลของเว็บ}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.5\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/Main-recomendation.png}
+    \caption{แสดงแบบสอบถามกิจกรรมที่สนใจ}
+  \end{subfigure}
+  \caption{หน้าแรก}
+  \label{fig:main}
 \end{figure}
 
 \begin{figure}[h]
   \centering
   \begin{subfigure}[b]{0.3\linewidth}
-    \includegraphics[width=\linewidth]{image/Figma-design/Event-info.png}
-    \caption{แสดงรายการประกิจกรรม}
+    \includegraphics[width=\linewidth]{image/Figma-design/New-Event-info.png}
+    \caption{แสดงรายการกิจกรรมต่างๆ}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.3\linewidth}
-    \includegraphics[width=\linewidth]{image/Figma-design/Event-info-1.png}
-    \caption{แสดงรายละเอียดของประกาศกิจกรรม}
+    \includegraphics[width=\linewidth]{image/Figma-design/New-Event-info2.png}
+    \caption{แสดงรายละเอียดของกิจกรรม}
   \end{subfigure}
-  \caption{หน้าข่าวสารกิจกรรม}
+  \caption{หน้ารายการกิจกรรม}
   \label{fig:event-info}
 \end{figure}
 
 \begin{figure}[h]
   \centering
   \begin{subfigure}[b]{0.3\linewidth}
-    \includegraphics[width=\linewidth]{image/Figma-design/Event-join.png}
-    \caption{แสดงรายการกิจกรรมที่เปิดรับสมัคร}
+    \includegraphics[width=\linewidth]{image/Figma-design/New-Event-join.png}
+    \caption{แสดงหน้าคำขอเข้าร่วม}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.3\linewidth}
-    \includegraphics[width=\linewidth]{image/Figma-design/Event-join-1.png}
-    \caption{แสดงรายละเอียดของกิจกรรมที่เปิดรับสมัคร}
+    \includegraphics[width=\linewidth]{image/Figma-design/New-Event-join-noti.png}
+    \caption{แสดงรายการคำขอเข้าร่วม}
   \end{subfigure}
-  \caption{หน้าเข้าร่วมกิจกรรม}
+  \caption{หน้าการขอเข้าร่วมกิจกรรม}
   \label{fig:event-join}
 \end{figure}
 
@@ -99,30 +106,45 @@
   \centering
   \begin{subfigure}[b]{0.3\linewidth}
     \includegraphics[width=\linewidth]{image/Figma-design/Create-event-info.png}
-    \caption{กรอกข้อมูลของกิจกรรม}
+    \caption{กรอกข้อมูลสร้างกิจกรรม}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.3\linewidth}
     \includegraphics[width=\linewidth]{image/Figma-design/Create-event-info-1.png}
     \caption{แสดงข้อความสร้างสำเร็จ}
   \end{subfigure}
-  \caption{หน้าสร้างประกาศกิจกรรม}
-  \label{fig:create-event-info}
+  \caption{หน้าสร้างกิจกรรม}
+  \label{fig:event-create}
 \end{figure}
 
 \begin{figure}[h]
   \centering
   \begin{subfigure}[b]{0.3\linewidth}
-    \includegraphics[width=\linewidth]{image/Figma-design/Create-event-join.png}
-    \caption{กรอกข้อมูลของกิจกรรม}
+    \includegraphics[width=\linewidth]{image/Figma-design/New-Mine-event.png}
+    \caption{แสดงกิจกรรมที่เข้าร่วมอยู่}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.3\linewidth}
-    \includegraphics[width=\linewidth]{image/Figma-design/Create-event-join-1.png}
-    \caption{แสดงข้อความสร้างสำเร็จ}
+    \includegraphics[width=\linewidth]{image/Figma-design/New-Mine-event2.png}
+    \caption{แสดงรายละเอียดกิจกรรมที่เข้าร่วมอยู่}
   \end{subfigure}
-  \caption{หน้าสร้างกิจกรรมแบบรับสมัคร}
-  \label{fig:create-event-join}
+  \caption{หน้ารายการกิจกรรมที่เข้าร่วม}
+  \label{fig:event-mine}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/mobile-main.png}
+    \caption{แสดงหน้าแรก}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{image/Figma-design/mobile-recomendation.png}
+    \caption{แสดงแบบสอบถามความสนใจ}
+  \end{subfigure}
+  \caption{หน้าการแสดงผลในโทรศัพท์}
+  \label{fig:mobile}
 \end{figure}
 
 \FloatBarrier
