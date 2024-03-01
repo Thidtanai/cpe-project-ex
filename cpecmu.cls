@@ -39,7 +39,7 @@
 \newif\ifproject
 \DeclareOption{project}{\projecttrue}
 \DeclareOption{survey}{\projectfalse}
-\ExecuteOptions{survey}
+\ExecuteOptions{project}
 \DeclareOption{10pt}{%
  \iffinal%
   \OptionNotUsed%
